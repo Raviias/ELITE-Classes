@@ -1,0 +1,1291 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITE CLASSES | Best Home Tuition & Coaching in Noida | Sainik, Navodaya & RIMC Prep</title>
+    <meta name="description" content="ELITE CLASSES - An Exclusive Mission For Futuristic Education. Premier 1-on-1 Home Tuition in Noida (Sector 34, 35, 50, 62, Greater Noida West) for Class 1-10 & Sainik School, Navodaya, RIMC Entrance.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        royal: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#1d4ed8',
+                            700: '#1e40af',
+                            800: '#1e3a8a',
+                            900: '#0f172a',
+                            950: '#090d16',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom styling for visual polish */
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(at 0% 0%, rgba(29, 78, 216, 0.35) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(245, 158, 11, 0.2) 0px, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 50%, #fde68a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 14px rgba(34, 197, 94, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-royal-700 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-royal-950 text-slate-200 text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="bg-gold-500 text-royal-950 font-bold px-2 py-0.5 rounded text-xs uppercase tracking-wider">Admissions Open</span>
+                <span class="font-medium">New Home Tuition & Sainik/Navodaya/RIMC Target Batches in Noida!</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-xs">
+                <span class="flex items-center gap-1.5 text-gold-400"><i class="fa-solid fa-location-dot"></i> Sector 34, 35, 50, 62 & Greater Noida West</span>
+                <button onclick="openConfigModal()" class="text-slate-400 hover:text-white underline flex items-center gap-1" title="Configure your WhatsApp number for live leads">
+                    <i class="fa-solid fa-gear"></i> Setup Contact No.
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-royal-800 to-royal-950 flex items-center justify-center text-gold-400 font-heading font-extrabold text-2xl shadow-md border border-gold-500/30 group-hover:scale-105 transition">
+                        E
+                    </div>
+                    <div>
+                        <span class="font-heading font-extrabold text-xl sm:text-2xl tracking-tight text-royal-900 block leading-none">
+                            ELITE <span class="text-royal-600">CLASSES</span>
+                        </span>
+                        <span class="text-[10px] sm:text-xs font-semibold text-amber-600 tracking-wider uppercase block mt-1">
+                            An Exclusive Mission For Futuristic Education
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+                    <a href="#home" class="hover:text-royal-600 transition">Home</a>
+                    <a href="#programs" class="hover:text-royal-600 transition">Programs</a>
+                    <a href="#entrance" class="hover:text-royal-600 transition flex items-center gap-1">
+                        <span>Sainik / RIMC</span>
+                        <span class="bg-amber-100 text-amber-800 text-[10px] px-1.5 py-0.5 rounded font-bold">SPL</span>
+                    </a>
+                    <a href="#methodology" class="hover:text-royal-600 transition">Why Us</a>
+                    <a href="#preview" class="hover:text-royal-600 transition">Report Sample</a>
+                    <a href="#sectors" class="hover:text-royal-600 transition">Noida Sectors</a>
+                </nav>
+
+                <!-- Action CTA -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#book-demo" class="bg-gradient-to-r from-amber-500 to-gold-600 hover:from-amber-600 hover:to-gold-600 text-royal-950 font-bold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Book Free Demo</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-royal-50 hover:text-royal-700">Home</a>
+            <a href="#programs" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-royal-50 hover:text-royal-700">Academic Programs (Class 1–10)</a>
+            <a href="#entrance" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-royal-50 hover:text-royal-700">Sainik, Navodaya & RIMC Prep</a>
+            <a href="#methodology" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-royal-50 hover:text-royal-700">Why ELITE Classes</a>
+            <a href="#preview" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-royal-50 hover:text-royal-700">Progress Report Sample</a>
+            <a href="#sectors" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-medium text-slate-700 hover:bg-royal-50 hover:text-royal-700">Noida Sectors We Serve</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="#book-demo" onclick="toggleMobileMenu()" class="w-full text-center bg-gold-500 text-royal-950 font-bold py-3 rounded-xl shadow">
+                    Book a Free Demo Class
+                </a>
+                <button onclick="openConfigModal()" class="w-full text-center text-xs text-slate-500 py-1.5 underline">
+                    <i class="fa-solid fa-gear"></i> Configure Owner WhatsApp Number
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-pattern text-white relative overflow-hidden py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Hero Copy -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card text-gold-400 text-xs sm:text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Noida's Most Disciplined & Result-Oriented Mentorship</span>
+                    </div>
+
+                    <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[52px] leading-tight tracking-tight">
+                        Premier Home Tuition & Coaching Classes in <span class="gold-gradient-text">Noida</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        Give your child the advantage of <strong class="text-white">1-on-1 Personalized Home Tutoring</strong> for <strong class="text-gold-400">Class 1st to 10th (CBSE/ICSE)</strong> and specialized result-driven preparation for <strong class="text-gold-400">Sainik School, Navodaya Vidyalaya & RIMC</strong> entrance exams.
+                    </p>
+
+                    <!-- Hindi/Bilingual Trust Line for Parents -->
+                    <div class="bg-royal-900/70 border-l-4 border-gold-500 p-3.5 rounded-r-xl text-xs sm:text-sm text-slate-200">
+                        <p class="font-medium">
+                            <i class="fa-solid fa-quote-left text-gold-400 mr-1.5"></i>
+                            सही मार्गदर्शन, साप्ताहिक OMR मॉक टेस्ट और हर महीने विस्तृत प्रोग्रेस रिपोर्ट — आपके बच्चे के उज्ज्वल भविष्य के लिए हमारी प्रतिबद्धता।
+                        </p>
+                    </div>
+
+                    <!-- Primary CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#book-demo" class="bg-gradient-to-r from-amber-400 to-gold-500 hover:from-amber-500 hover:to-gold-600 text-royal-950 font-heading font-extrabold px-7 py-4 rounded-xl shadow-lg shadow-amber-500/20 flex items-center justify-center gap-3 text-base transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-chalkboard-user text-lg"></i>
+                            <span>Book a Free Demo Class</span>
+                        </a>
+                        <button onclick="triggerDirectWhatsApp('General Enquiry from Hero Section')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-bold px-7 py-4 rounded-xl shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-3 text-base transition transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>WhatsApp Direct Enquiry</span>
+                        </button>
+                    </div>
+
+                    <!-- 4 Key Trust Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4">
+                        <div class="glass-card p-3 rounded-xl flex items-center gap-2.5">
+                            <i class="fa-solid fa-book-open-reader text-gold-400 text-lg"></i>
+                            <span class="text-xs font-semibold leading-snug">Class 1–10<br><span class="text-slate-400 font-normal">All Subjects</span></span>
+                        </div>
+                        <div class="glass-card p-3 rounded-xl flex items-center gap-2.5">
+                            <i class="fa-solid fa-shield-halved text-gold-400 text-lg"></i>
+                            <span class="text-xs font-semibold leading-snug">Sainik / JNV<br><span class="text-slate-400 font-normal">& RIMC Target</span></span>
+                        </div>
+                        <div class="glass-card p-3 rounded-xl flex items-center gap-2.5">
+                            <i class="fa-solid fa-file-pdf text-gold-400 text-lg"></i>
+                            <span class="text-xs font-semibold leading-snug">Weekly Tests<br><span class="text-slate-400 font-normal">& PDF Reports</span></span>
+                        </div>
+                        <div class="glass-card p-3 rounded-xl flex items-center gap-2.5">
+                            <i class="fa-solid fa-house-laptop text-gold-400 text-lg"></i>
+                            <span class="text-xs font-semibold leading-snug">Noida & Ext.<br><span class="text-slate-400 font-normal">Home Visit</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Quick Enquiry Card & Mentor Highlight -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white text-slate-800 rounded-2xl shadow-2xl p-6 sm:p-8 border-t-4 border-gold-500 relative">
+                        <div class="absolute -top-3.5 right-6 bg-royal-800 text-gold-400 text-xs font-bold px-3 py-1 rounded-full shadow">
+                            100% Free 1st Demo Session
+                        </div>
+
+                        <h2 class="font-heading font-extrabold text-xl sm:text-2xl text-royal-900">
+                            Request a Home Tutor Today
+                        </h2>
+                        <p class="text-xs sm:text-sm text-slate-500 mt-1 mb-5">
+                            Get a callback within 15 minutes for Noida & Greater Noida West sectors.
+                        </p>
+
+                        <!-- Quick Mini Form -->
+                        <form onsubmit="handleHeroQuickForm(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Parent / Student Name *</label>
+                                <div class="relative">
+                                    <i class="fa-solid fa-user absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+                                    <input type="text" id="hero-name" required placeholder="e.g., Rajesh Sharma" class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 focus:border-royal-600 outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Class / Exam *</label>
+                                    <select id="hero-class" required class="w-full px-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none">
+                                        <option value="Sainik School / Navodaya / RIMC">Sainik / Navodaya / RIMC</option>
+                                        <option value="Class 9 - 10 (CBSE/ICSE)">Class 9 – 10 (Board Prep)</option>
+                                        <option value="Class 6 - 8 (All Subjects)">Class 6 – 8 (Foundation)</option>
+                                        <option value="Class 1 - 5 (Primary)">Class 1 – 5 (Primary All Sub)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Noida Sector / Society *</label>
+                                    <input type="text" id="hero-sector" required placeholder="e.g., Sec 34 / CRC Sublimis" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Mobile / WhatsApp Number *</label>
+                                <div class="relative">
+                                    <i class="fa-solid fa-phone absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+                                    <input type="tel" id="hero-phone" required pattern="[0-9]{10}" placeholder="10-digit Mobile Number" class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="w-full bg-royal-800 hover:bg-royal-900 text-white font-heading font-bold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                                <span>Check Tutor Availability & Book Demo</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+
+                        <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-600"></i> Verified & Disciplined Mentors</span>
+                            <span class="font-semibold text-royal-800">Led by Ravi Yadav Sir</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS / TRUST RIBBON -->
+    <section class="bg-white border-b border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-3">
+                    <div class="text-2xl sm:text-3xl font-heading font-extrabold text-royal-800">1-on-1</div>
+                    <div class="text-xs sm:text-sm font-medium text-slate-600 mt-1">Personalized Home Attention</div>
+                </div>
+                <div class="p-3 border-l border-slate-200">
+                    <div class="text-2xl sm:text-3xl font-heading font-extrabold text-royal-800">30-Day</div>
+                    <div class="text-xs sm:text-sm font-medium text-slate-600 mt-1">Structured Academic Planners</div>
+                </div>
+                <div class="p-3 border-l border-slate-200">
+                    <div class="text-2xl sm:text-3xl font-heading font-extrabold text-amber-600">100%</div>
+                    <div class="text-xs sm:text-sm font-medium text-slate-600 mt-1">Weekly Mock Test & PDF Report</div>
+                </div>
+                <div class="p-3 border-l border-slate-200">
+                    <div class="text-2xl sm:text-3xl font-heading font-extrabold text-royal-800">15+ Sectors</div>
+                    <div class="text-xs sm:text-sm font-medium text-slate-600 mt-1">Active Across Noida & Extension</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMIC & ENTRANCE PROGRAMS SECTION -->
+    <section id="programs" class="py-16 sm:py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-royal-600 bg-royal-100 px-3 py-1 rounded-full">Structured Curriculum</span>
+                <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-royal-950 mt-3">
+                    Tailored Academic & Entrance Programs
+                </h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                    Whether your child needs strong concept building in school subjects or rigorous training to crack prestigious military & boarding school entrance exams, we have a dedicated roadmap.
+                </p>
+
+                <!-- Filter Tabs -->
+                <div class="inline-flex p-1.5 bg-slate-200/80 rounded-xl mt-6 gap-1">
+                    <button onclick="filterPrograms('all')" id="tab-all" class="prog-tab bg-royal-800 text-white px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition">
+                        All Programs
+                    </button>
+                    <button onclick="filterPrograms('school')" id="tab-school" class="prog-tab text-slate-700 hover:text-royal-900 px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition">
+                        School Tutoring (Class 1–10)
+                    </button>
+                    <button onclick="filterPrograms('entrance')" id="tab-entrance" class="prog-tab text-slate-700 hover:text-royal-900 px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition">
+                        Sainik / Navodaya / RIMC
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3 Main Program Cards -->
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Primary & Middle Wing -->
+                <div data-category="school" class="program-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between transition duration-300">
+                    <div>
+                        <div class="bg-gradient-to-r from-royal-800 to-royal-700 p-6 text-white">
+                            <div class="flex justify-between items-start">
+                                <span class="bg-white/20 text-xs font-bold px-2.5 py-1 rounded-md uppercase">Foundation Wing</span>
+                                <i class="fa-solid fa-seedling text-2xl text-gold-400"></i>
+                            </div>
+                            <h3 class="font-heading font-extrabold text-xl mt-3">Primary & Middle Wing</h3>
+                            <p class="text-royal-100 text-xs mt-1">Class 1st to 8th (CBSE / ICSE / IB)</p>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Building rock-solid fundamentals, daily homework regularity, and curiosity during the most formative academic years.
+                            </p>
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                                    <span><strong>All Subjects Covered:</strong> Special focus on Mathematics, Science, English Grammar & Social Studies.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                                    <span><strong>Olympiad Foundation:</strong> IMO, NSO & IEO logical reasoning worksheets.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                                    <span><strong>Reading & Writing Skills:</strong> Neat answer-writing presentation, vocabulary & spoken confidence.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                                    <span><strong>Bi-Weekly Unit Tests:</strong> Regular copy checking and parent feedback.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <div class="bg-slate-50 p-3 rounded-xl mb-4 flex items-center justify-between text-xs">
+                            <span class="font-semibold text-slate-600">Mode:</span>
+                            <span class="font-bold text-royal-800">1-on-1 Home Tuition / Small Batch</span>
+                        </div>
+                        <button onclick="selectProgramAndScroll('Class 1-8 (Foundation Home Tuition)')" class="w-full bg-royal-50 hover:bg-royal-800 text-royal-800 hover:text-white font-bold py-3 rounded-xl border border-royal-200 transition flex items-center justify-center gap-2 text-sm">
+                            <span>Enquire for Class 1–8</span>
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Secondary Board Prep -->
+                <div data-category="school" class="program-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between transition duration-300">
+                    <div>
+                        <div class="bg-gradient-to-r from-royal-900 to-royal-800 p-6 text-white">
+                            <div class="flex justify-between items-start">
+                                <span class="bg-gold-500 text-royal-950 text-xs font-extrabold px-2.5 py-1 rounded-md uppercase">95%+ Target</span>
+                                <i class="fa-solid fa-graduation-cap text-2xl text-gold-400"></i>
+                            </div>
+                            <h3 class="font-heading font-extrabold text-xl mt-3">Secondary Board Prep</h3>
+                            <p class="text-royal-100 text-xs mt-1">Class 9th & 10th (CBSE / ICSE Boards)</p>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Intensive, exam-oriented preparation to master complex concepts, numericals, and board answer-sheet presentation.
+                            </p>
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                                    <span><strong>Maths & Science Mastery:</strong> Complete NCERT + Exemplar + RD Sharma / S. Chand coverage.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                                    <span><strong>Custom PDF Revision Notes:</strong> Crisp chapter-wise formula sheets, diagrams & theorems.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                                    <span><strong>Board Pattern Mock Papers:</strong> Case-based, Assertion-Reason & PYQ marathon tests.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                                    <span><strong>Doubt Clearing & Mentorship:</strong> Eliminating exam fear with time-management drills.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <div class="bg-slate-50 p-3 rounded-xl mb-4 flex items-center justify-between text-xs">
+                            <span class="font-semibold text-slate-600">Focus:</span>
+                            <span class="font-bold text-royal-800">Maths, Science, English & SST</span>
+                        </div>
+                        <button onclick="selectProgramAndScroll('Class 9-10 (Board Special Coaching)')" class="w-full bg-royal-50 hover:bg-royal-800 text-royal-800 hover:text-white font-bold py-3 rounded-xl border border-royal-200 transition flex items-center justify-center gap-2 text-sm">
+                            <span>Enquire for Class 9–10</span>
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Sainik, Navodaya & RIMC Entrance (Highlighted) -->
+                <div id="entrance" data-category="entrance" class="program-card bg-white rounded-2xl shadow-xl border-2 border-gold-500 overflow-hidden flex flex-col justify-between relative transition duration-300">
+                    <div>
+                        <div class="bg-gradient-to-r from-amber-500 via-gold-500 to-amber-600 p-6 text-royal-950">
+                            <div class="flex justify-between items-start">
+                                <span class="bg-royal-950 text-gold-400 text-xs font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wide">Flagship Target Batch</span>
+                                <i class="fa-solid fa-medal text-2xl text-royal-950"></i>
+                            </div>
+                            <h3 class="font-heading font-extrabold text-xl mt-3">Sainik, Navodaya & RIMC</h3>
+                            <p class="text-royal-900 font-semibold text-xs mt-1">AISSEE (Class 6 & 9) | JNVST | RIMC Dehradun</p>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Specialized officer-like training and high-scoring strategy designed specifically for India's premier defence & residential schools.
+                            </p>
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-star text-amber-500 mt-1"></i>
+                                    <span><strong>Complete Syllabus Mastery:</strong> Speed Mathematics, Intelligence/Reasoning, English & General Knowledge.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-star text-amber-500 mt-1"></i>
+                                    <span><strong>OMR-Based Weekly Mock Tests:</strong> Real exam simulation with accuracy & time-tracking analysis.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-star text-amber-500 mt-1"></i>
+                                    <span><strong>Bilingual Study Material:</strong> Custom Hindi & English practice modules and 30-Day Revision Planners.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-star text-amber-500 mt-1"></i>
+                                    <span><strong>Interview & Medical Guidance:</strong> Complete post-exam support till final merit list.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <div class="bg-amber-50 p-3 rounded-xl mb-4 flex items-center justify-between text-xs border border-amber-200">
+                            <span class="font-semibold text-amber-900">Special Feature:</span>
+                            <span class="font-extrabold text-royal-900">1-on-1 Home & Target Batch</span>
+                        </div>
+                        <button onclick="selectProgramAndScroll('Sainik School / Navodaya / RIMC Entrance')" class="w-full bg-gradient-to-r from-royal-800 to-royal-950 hover:from-royal-900 hover:to-black text-gold-400 font-bold py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm">
+                            <span>Book Entrance Assessment Demo</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- THE "ELITE" METHODOLOGY / WHY PARENTS TRUST US -->
+    <section id="methodology" class="py-16 sm:py-20 bg-royal-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-gold-400 bg-white/10 px-3.5 py-1.5 rounded-full">The ELITE Difference</span>
+                <h2 class="font-heading font-extrabold text-2xl sm:text-4xl mt-4">
+                    Why Parents in Noida Trust <span class="text-gold-400">ELITE CLASSES</span>
+                </h2>
+                <p class="text-slate-300 mt-3 text-sm sm:text-base">
+                    Unlike ordinary home tuitions that run without a plan, we bring a professional coaching ecosystem right to your study table.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-400/40 flex items-center justify-center text-gold-400 text-xl mb-5">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white">30-Day Study Roadmaps</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm mt-2 leading-relaxed">
+                        Every student receives a structured monthly academic planner detailing daily topics, revision slots, and test dates in advance.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-400/40 flex items-center justify-center text-gold-400 text-xl mb-5">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white">Custom Bilingual Notes</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm mt-2 leading-relaxed">
+                        Specially crafted worksheets, short-trick sheets, and bilingual (English + Hindi) revision modules designed for quick retention.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-400/40 flex items-center justify-center text-gold-400 text-xl mb-5">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white">PDF Progress Reports</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm mt-2 leading-relaxed">
+                        Transparent monthly performance PDF cards shared directly on parents' WhatsApp with topic-wise accuracy and mentor remarks.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-400/40 flex items-center justify-center text-gold-400 text-xl mb-5">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-white">1-on-1 Disciplined Focus</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm mt-2 leading-relaxed">
+                        Zero distraction environment. Complete focus on your child's weak areas, handwriting improvement, and daily self-study habits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SAMPLE STUDY MATERIAL & PERFORMANCE REPORT PREVIEW -->
+    <section id="preview" class="py-16 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Info & Interactive Toggle Controls -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-amber-700 bg-amber-100 px-3 py-1 rounded-full">100% Transparency for Parents</span>
+                    <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-royal-950 leading-tight">
+                        See How We Track Your Child's Academic Growth
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        At <strong>ELITE CLASSES</strong>, we don't just teach—we measure every concept learned. Parents receive professional digital reports and custom test papers every month.
+                    </p>
+
+                    <!-- Interactive Preview Switcher Buttons -->
+                    <div class="space-y-3 pt-2">
+                        <button onclick="switchMockup('report')" id="btn-mockup-report" class="w-full text-left p-4 rounded-xl border-2 border-royal-700 bg-royal-50/70 transition flex items-center justify-between">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-lg bg-royal-800 text-gold-400 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-chart-column"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-heading font-bold text-sm sm:text-base text-royal-950">1. Monthly Student Progress Report</h4>
+                                    <p class="text-xs text-slate-600">Subject accuracy, attendance, weak-topic radar & mentor remarks</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-circle-chevron-right text-royal-700"></i>
+                        </button>
+
+                        <button onclick="switchMockup('test')" id="btn-mockup-test" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-royal-300 bg-white transition flex items-center justify-between">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-file-signature"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-heading font-bold text-sm sm:text-base text-royal-950">2. Custom Weekly Mock Test & Planner</h4>
+                                    <p class="text-xs text-slate-600">Bilingual question papers & 30-day structured chapter schedule</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-circle-chevron-right text-slate-400"></i>
+                        </button>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="triggerDirectWhatsApp('Please share a sample PDF Progress Report & Study Planner on my WhatsApp')" class="inline-flex items-center gap-2 text-sm font-bold text-royal-700 hover:text-royal-900 underline">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i>
+                            <span>Request a Full Sample PDF on WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Live Visual Mockup Window -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900 p-3 sm:p-5 rounded-3xl shadow-2xl border border-slate-800">
+                        <!-- Top Document Bar -->
+                        <div class="flex items-center justify-between px-3 pb-3 border-b border-slate-800 text-xs text-slate-400">
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                                <span id="mockup-filename" class="ml-2 font-mono text-slate-300">ELITE_Monthly_Progress_Report_Sample.pdf</span>
+                            </div>
+                            <span class="bg-royal-800 text-gold-400 px-2.5 py-0.5 rounded font-semibold">LIVE PREVIEW</span>
+                        </div>
+
+                        <!-- VIEW 1: PROGRESS REPORT MOCKUP -->
+                        <div id="view-report" class="bg-white text-slate-800 rounded-2xl p-5 sm:p-7 mt-3 space-y-5">
+                            <div class="flex flex-wrap justify-between items-start gap-4 border-b-2 border-royal-900 pb-4">
+                                <div>
+                                    <span class="text-[11px] font-extrabold uppercase tracking-widest text-amber-600">An Exclusive Mission For Futuristic Education</span>
+                                    <h3 class="font-heading font-extrabold text-xl text-royal-950">ELITE CLASSES — STUDENT PROGRESS REPORT</h3>
+                                    <p class="text-xs text-slate-500">Student: <strong>Aarav Verma</strong> | Batch: <strong>Class 6 / Sainik School Prep</strong> | Sector 34, Noida</p>
+                                </div>
+                                <div class="bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-xl text-right">
+                                    <span class="text-[10px] uppercase font-bold text-emerald-700 block">Overall Grade</span>
+                                    <span class="font-heading font-extrabold text-lg text-emerald-800">A+ (91.4%)</span>
+                                </div>
+                            </div>
+
+                            <!-- Subject Accuracy Bars -->
+                            <div class="space-y-3">
+                                <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-500">Subject-Wise Test Accuracy & Concept Mastery</h4>
+                                
+                                <div>
+                                    <div class="flex justify-between text-xs font-bold mb-1">
+                                        <span>Mathematics & Speed Arithmetic</span>
+                                        <span class="text-royal-800">94% (Excellent)</span>
+                                    </div>
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="bg-royal-700 h-full rounded-full" style="width: 94%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-between text-xs font-bold mb-1">
+                                        <span>Intelligence & Logical Reasoning</span>
+                                        <span class="text-emerald-700">96% (Top Strength)</span>
+                                    </div>
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="bg-emerald-600 h-full rounded-full" style="width: 96%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-between text-xs font-bold mb-1">
+                                        <span>English Grammar & Comprehension</span>
+                                        <span class="text-amber-600">84% (Improving)</span>
+                                    </div>
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="bg-amber-500 h-full rounded-full" style="width: 84%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Key Metrics & Mentor Remark -->
+                            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+                                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+                                    <span class="text-slate-500 block">Tests Conducted</span>
+                                    <strong class="text-sm text-royal-950">04 Weekly OMR Tests</strong>
+                                </div>
+                                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+                                    <span class="text-slate-500 block">Homework Regularity</span>
+                                    <strong class="text-sm text-emerald-700">100% Punctual</strong>
+                                </div>
+                                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+                                    <span class="text-slate-500 block">Focus Area Next Month</span>
+                                    <strong class="text-sm text-amber-700">Unitary Method & Mensuration</strong>
+                                </div>
+                            </div>
+
+                            <div class="bg-royal-50 border-l-4 border-royal-700 p-3.5 rounded-r-xl text-xs">
+                                <strong class="text-royal-950 block mb-0.5"><i class="fa-solid fa-comment-dots mr-1"></i> Mentor's Remark (Ravi Yadav Sir):</strong>
+                                <p class="text-slate-700">"Aarav has shown remarkable improvement in calculation speed this month. We are adding 15 minutes of daily word-problem drills to push his score above 95%."</p>
+                            </div>
+                        </div>
+
+                        <!-- VIEW 2: MOCK TEST & PLANNER MOCKUP (Hidden by default) -->
+                        <div id="view-test" class="hidden bg-white text-slate-800 rounded-2xl p-5 sm:p-7 mt-3 space-y-5">
+                            <div class="flex flex-wrap justify-between items-start gap-4 border-b-2 border-amber-500 pb-4">
+                                <div>
+                                    <span class="text-[11px] font-extrabold uppercase tracking-widest text-royal-700">ELITE CLASSES — WEEKLY ASSESSMENT SERIES</span>
+                                    <h3 class="font-heading font-extrabold text-xl text-royal-950">BILINGUAL MOCK TEST & 30-DAY PLANNER</h3>
+                                    <p class="text-xs text-slate-500">Target: <strong>AISSEE / JNVST / CBSE Foundation</strong> | Max Marks: 300 | Time: 150 Mins</p>
+                                </div>
+                                <span class="bg-amber-100 text-amber-900 text-xs font-extrabold px-3 py-1 rounded-lg">Bilingual Format</span>
+                            </div>
+
+                            <!-- Sample Question Preview -->
+                            <div class="space-y-3 text-xs sm:text-sm">
+                                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                                    <div class="font-bold text-royal-900">Q1. [Mathematics / गणित]</div>
+                                    <p class="mt-1 text-slate-800">A train 240m long passes a pole in 24 seconds. How long will it take to pass a platform 650m long?</p>
+                                    <p class="text-slate-600 text-xs mt-0.5 italic">एक 240 मीटर लंबी रेलगाड़ी एक खंभे को 24 सेकंड में पार करती है। वह 650 मीटर लंबे प्लेटफॉर्म को पार करने में कितना समय लेगी?</p>
+                                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-2.5 text-xs font-semibold">
+                                        <span class="bg-white border border-slate-200 px-2.5 py-1 rounded">(A) 65 sec</span>
+                                        <span class="bg-emerald-50 border border-emerald-400 text-emerald-800 px-2.5 py-1 rounded">(B) 89 sec ✓</span>
+                                        <span class="bg-white border border-slate-200 px-2.5 py-1 rounded">(C) 100 sec</span>
+                                        <span class="bg-white border border-slate-200 px-2.5 py-1 rounded">(D) 120 sec</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-3.5 bg-amber-50/60 rounded-xl border border-amber-200">
+                                    <div class="font-bold text-amber-900 flex items-center justify-between">
+                                        <span><i class="fa-solid fa-list-check mr-1.5"></i> Sample Weekly Study Roadmap Included</span>
+                                        <span class="text-[11px] uppercase bg-white px-2 py-0.5 rounded border border-amber-200">Week 1–4</span>
+                                    </div>
+                                    <p class="text-xs text-slate-700 mt-1.5">
+                                        • <strong>Mon–Wed:</strong> Concept Building + NCERT/Reference Exercise<br>
+                                        • <strong>Thu–Fri:</strong> High-Order Thinking (HOTS) & Previous Year Questions<br>
+                                        • <strong>Saturday:</strong> Weekly OMR Test + Doubt Clearing Session with Mentor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO: AREAS WE SERVE IN NOIDA -->
+    <section id="sectors" class="py-16 sm:py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-royal-700 bg-royal-100 px-3 py-1 rounded-full">Local Home Visit Coverage</span>
+                <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-royal-950 mt-3">
+                    Noida Sectors & Societies We Serve
+                </h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">
+                    Check instant 1-on-1 home tutor availability in your sector or society across Central Noida & Greater Noida West (Noida Extension).
+                </p>
+            </div>
+
+            <!-- Interactive Sector Availability Quick Checker -->
+            <div class="max-w-3xl mx-auto bg-white p-5 sm:p-6 rounded-2xl shadow-md border border-slate-200 mb-10">
+                <label class="block text-xs font-extrabold uppercase tracking-wider text-royal-900 mb-2">
+                    <i class="fa-solid fa-magnifying-glass-location text-gold-500 mr-1"></i>
+                    Quick Check: Select Your Noida Sector or Society
+                </label>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <select id="sector-checker-select" onchange="checkSectorAvailability()" class="flex-1 px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:ring-2 focus:ring-royal-600 outline-none">
+                        <option value="">-- Choose Your Location in Noida --</option>
+                        <option value="Sector 34 & Sector 35, Noida (Supertech / Himgiri / Nearby)">Sector 34 & Sector 35, Noida</option>
+                        <option value="Sector 1, Greater Noida West (CRC Sublimis / Ace City / Nearby)">Sector 1, Greater Noida West (CRC Sublimis & Nearby)</option>
+                        <option value="Sector 31 & Sector 32, Noida">Sector 31 & Sector 32, Noida</option>
+                        <option value="Sector 50, Sector 51 & Sector 52, Noida">Sector 50, Sector 51 & Sector 52, Noida</option>
+                        <option value="Sector 61 & Sector 62, Noida">Sector 61 & Sector 62, Noida</option>
+                        <option value="Sector 71, Sector 72 & Sector 73, Noida">Sector 71, Sector 72 & Sector 73, Noida</option>
+                        <option value="Sector 74, 75, 76, 77 & 78, Noida">Sector 74, 75, 76, 77 & 78, Noida</option>
+                        <option value="Noida Extension / Gaur City / Nearby Sectors">Noida Extension / Gaur City / Other Sectors</option>
+                    </select>
+                    <button onclick="bookFromSectorChecker()" class="bg-royal-800 hover:bg-royal-900 text-white font-bold px-6 py-3 rounded-xl text-sm transition whitespace-nowrap">
+                        Book Demo Here
+                    </button>
+                </div>
+
+                <!-- Dynamic Availability Result Banner -->
+                <div id="sector-result-box" class="hidden mt-4 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between gap-3">
+                    <div class="flex items-center gap-2.5 text-xs sm:text-sm text-emerald-900">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-lg"></i>
+                        <span id="sector-result-text" class="font-medium"></span>
+                    </div>
+                    <a href="#book-demo" class="text-xs font-extrabold text-emerald-800 underline whitespace-nowrap">Reserve Slot →</a>
+                </div>
+            </div>
+
+            <!-- Filterable / Clickable Sector Cloud for Local SEO -->
+            <div class="flex flex-wrap justify-center gap-2.5 sm:gap-3">
+                <button onclick="quickSelectSector('Sector 34, Noida')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Home Tuition in Sector 34 Noida
+                </button>
+                <button onclick="quickSelectSector('Sector 35, Noida')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Home Tuition in Sector 35 Noida
+                </button>
+                <button onclick="quickSelectSector('Sector 1 Greater Noida West (CRC Sublimis)')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Sector 1 Greater Noida West (CRC Sublimis)
+                </button>
+                <button onclick="quickSelectSector('Sector 31 & 32, Noida')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Sector 31 & 32 Noida
+                </button>
+                <button onclick="quickSelectSector('Sector 50, 51 & 52, Noida')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Sector 50, 51 & 52 Noida
+                </button>
+                <button onclick="quickSelectSector('Sector 61 & 62, Noida')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Sector 61 & 62 Noida
+                </button>
+                <button onclick="quickSelectSector('Sector 71, Noida')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Sector 71 Noida
+                </button>
+                <button onclick="quickSelectSector('Sector 74 to 78, Noida')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Sector 74, 75, 76, 77 & 78 Noida
+                </button>
+                <button onclick="quickSelectSector('Noida Extension / Greater Noida West')" class="bg-white hover:bg-royal-800 hover:text-white text-slate-700 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm border border-slate-200 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-gold-500"></i> Noida Extension Societies
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEAD CAPTURE & DIRECT WHATSAPP ENQUIRY FORM -->
+    <section id="book-demo" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-royal-900 via-royal-950 to-slate-900 rounded-3xl shadow-2xl overflow-hidden border border-slate-800">
+                <div class="grid lg:grid-cols-12">
+                    
+                    <!-- Left Column: Contact Info & Assurance -->
+                    <div class="lg:col-span-5 p-8 sm:p-10 bg-royal-800/40 text-white flex flex-col justify-between">
+                        <div class="space-y-6">
+                            <span class="bg-gold-500 text-royal-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase">Free Demo Session</span>
+                            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl leading-tight">
+                                Book Your Child's Free Assessment & Demo Class
+                            </h2>
+                            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                                Fill out the details and our academic mentor will connect with you to schedule a convenient home visit or trial session.
+                            </p>
+
+                            <div class="space-y-4 pt-2 text-xs sm:text-sm">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-white">Founder & Lead Educator</strong>
+                                        <span class="text-slate-300">Ravi Yadav Sir (Dedicated Academic & Entrance Mentor)</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-white">Primary Service Hubs</strong>
+                                        <span class="text-slate-300">Sector 34, Sector 35, Sector 50–78 Noida & Sector 1 Greater Noida West</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-white">Consultation Hours</strong>
+                                        <span class="text-slate-300">Mon – Sun: 7:00 AM to 9:30 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-white/15">
+                            <p class="text-xs text-gold-400 font-semibold">
+                                "शिक्षा केवल सिलेबस पूरा करना नहीं, बल्कि बच्चे के भीतर अनुशासन और आत्मविश्वास जगाना है।"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Main Lead Form -->
+                    <div class="lg:col-span-7 p-8 sm:p-10 bg-white text-slate-800">
+                        
+                        <!-- Form View -->
+                        <form id="main-enquiry-form" onsubmit="handleMainFormSubmit(event)" class="space-y-5">
+                            <h3 class="font-heading font-extrabold text-xl text-royal-950">
+                                Student Enquiry & Demo Booking Form
+                            </h3>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Parent / Student Name *</label>
+                                    <input type="text" id="form-name" required placeholder="Enter Full Name" class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Mobile / WhatsApp No. *</label>
+                                    <input type="tel" id="form-phone" required pattern="[0-9]{10}" placeholder="10-Digit Mobile Number" class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Student Class / Target Exam *</label>
+                                    <select id="form-class" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none">
+                                        <option value="Sainik School (AISSEE) Prep">Sainik School (AISSEE) Prep</option>
+                                        <option value="Navodaya Vidyalaya (JNVST) Prep">Navodaya Vidyalaya (JNVST) Prep</option>
+                                        <option value="RIMC Dehradun Entrance Prep">RIMC Dehradun Entrance Prep</option>
+                                        <option value="Class 9 – 10 (CBSE/ICSE Board)">Class 9 – 10 (CBSE/ICSE Board)</option>
+                                        <option value="Class 6 – 8 (All Subjects)">Class 6 – 8 (All Subjects)</option>
+                                        <option value="Class 1 – 5 (Primary All Subjects)">Class 1 – 5 (Primary All Subjects)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Preferred Tuition Mode *</label>
+                                    <select id="form-mode" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none">
+                                        <option value="1-on-1 Home Tuition (At Student's Home)">1-on-1 Home Tuition (Home Visit)</option>
+                                        <option value="Focused Small Group / Coaching Batch">Focused Small Group / Batch</option>
+                                        <option value="Live 1-on-1 Online Classes">Live 1-on-1 Online Classes</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Noida Sector & Society Name *</label>
+                                <input type="text" id="form-sector" required placeholder="e.g., Sector 34 Noida / CRC Sublimis Sector 1" class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Specific Subject / Requirement (Optional)</label>
+                                <textarea id="form-notes" rows="2" placeholder="e.g., Need special focus on Maths & Science, or Sainik School Class 6 full preparation..." class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-royal-600 outline-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-heading font-extrabold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-base">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                <span>Submit & Send Instant Enquiry on WhatsApp</span>
+                            </button>
+                            <p class="text-[11px] text-center text-slate-400">
+                                Clicking submit formats your enquiry neatly and opens WhatsApp for immediate priority response.
+                            </p>
+                        </form>
+
+                        <!-- Instant Confirmation Screen (Shown after submit) -->
+                        <div id="form-confirmation" class="hidden py-8 text-center space-y-4">
+                            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto">
+                                <i class="fa-solid fa-check-double"></i>
+                            </div>
+                            <h3 class="font-heading font-extrabold text-2xl text-royal-950">
+                                Enquiry Ready for WhatsApp!
+                            </h3>
+                            <p class="text-sm text-slate-600 max-w-md mx-auto">
+                                Thank you, <strong id="confirm-user-name" class="text-royal-800"></strong>! We have prepared your demo request for <strong id="confirm-user-class" class="text-royal-800"></strong> in <strong id="confirm-user-sector" class="text-royal-800"></strong>.
+                            </p>
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-left font-mono text-slate-700 max-w-md mx-auto whitespace-pre-line" id="confirm-message-preview"></div>
+                            <div class="flex flex-col sm:flex-row gap-3 justify-center pt-3">
+                                <a id="confirm-wa-link" href="#" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow flex items-center justify-center gap-2 text-sm">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    <span>Open WhatsApp Again</span>
+                                </a>
+                                <button onclick="resetMainForm()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-5 py-3 rounded-xl text-sm">
+                                    Submit Another Enquiry
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-royal-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                
+                <!-- Brand Col -->
+                <div class="md:col-span-2 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gold-500 flex items-center justify-center text-royal-950 font-heading font-extrabold text-xl">
+                            E
+                        </div>
+                        <div>
+                            <span class="font-heading font-extrabold text-xl text-white block leading-none">ELITE CLASSES</span>
+                            <span class="text-[11px] font-semibold text-gold-400 uppercase tracking-wider">An Exclusive Mission For Futuristic Education</span>
+                        </div>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-400 max-w-md leading-relaxed pt-1">
+                        Premier 1-on-1 Home Tuition and Specialized Entrance Coaching in Noida for Class 1st to 10th (CBSE/ICSE), Sainik School (AISSEE), Navodaya Vidyalaya (JNVST), and RIMC.
+                    </p>
+                    <p class="text-xs font-semibold text-slate-300 pt-1">
+                        <i class="fa-solid fa-chalkboard-user text-gold-400 mr-1.5"></i> Led by <span class="text-white">Ravi Yadav</span> | Dedicated Educator & Mentor
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-heading font-bold text-sm uppercase tracking-wider mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="#home" class="hover:text-gold-400 transition">Home</a></li>
+                        <li><a href="#programs" class="hover:text-gold-400 transition">Class 1–10 Home Tuition</a></li>
+                        <li><a href="#entrance" class="hover:text-gold-400 transition">Sainik, Navodaya & RIMC Prep</a></li>
+                        <li><a href="#preview" class="hover:text-gold-400 transition">Sample Progress Report</a></li>
+                        <li><a href="#sectors" class="hover:text-gold-400 transition">Noida Sectors Served</a></li>
+                        <li><a href="#book-demo" class="hover:text-gold-400 transition">Book a Free Demo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Noida Locations -->
+                <div>
+                    <h4 class="text-white font-heading font-bold text-sm uppercase tracking-wider mb-3">Noida Service Areas</h4>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Sector 34, Sector 35, Sector 31, Sector 32, Sector 50, Sector 51, Sector 52, Sector 61, Sector 62, Sector 71, Sector 74–78 & Sector 1 Greater Noida West (CRC Sublimis & Noida Extension).
+                    </p>
+                    <button onclick="openConfigModal()" class="mt-4 inline-flex items-center gap-1.5 text-xs text-gold-400 hover:underline">
+                        <i class="fa-solid fa-sliders"></i> Configure Owner Contact Number
+                    </button>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>© <span id="current-year"></span> ELITE CLASSES Noida. All rights reserved.</p>
+                <p>Designed for Academic Excellence & Discipline in Noida.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS (Bottom Right) -->
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+        <!-- Quick Call Button -->
+        <button onclick="triggerQuickCall()" title="Call ELITE CLASSES" class="w-12 h-12 rounded-full bg-royal-800 hover:bg-royal-900 text-gold-400 shadow-lg border border-gold-400/40 flex items-center justify-center text-lg transition transform hover:scale-105">
+            <i class="fa-solid fa-phone-volume"></i>
+        </button>
+
+        <!-- Floating WhatsApp Button -->
+        <button onclick="triggerDirectWhatsApp('Hi ELITE CLASSES, I am looking for Home Tuition / Coaching in Noida. Please share details.')" class="pulse-ring bg-emerald-500 hover:bg-emerald-600 text-white font-heading font-bold px-4 py-3.5 rounded-full shadow-2xl flex items-center gap-2.5 transition transform hover:scale-105">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span class="text-xs sm:text-sm pr-1 hidden sm:inline">WhatsApp Us</span>
+        </button>
+    </div>
+
+    <!-- OWNER CONTACT NUMBER CONFIGURATION MODAL (No alert() used) -->
+    <div id="config-modal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+                <h3 class="font-heading font-extrabold text-lg text-royal-950 flex items-center gap-2">
+                    <i class="fa-solid fa-gear text-gold-500"></i>
+                    <span>Website Owner Contact Setup</span>
+                </h3>
+                <button onclick="closeConfigModal()" class="text-slate-400 hover:text-slate-700">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <p class="text-xs text-slate-600 leading-relaxed">
+                Enter your 10-digit WhatsApp/Calling number below. All <strong>"Book Free Demo"</strong> forms and <strong>"WhatsApp Us"</strong> buttons on this website will automatically send leads directly to this number.
+            </p>
+
+            <div>
+                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Owner WhatsApp Number (with 91)</label>
+                <input type="text" id="owner-phone-input" value="919675732501" placeholder="e.g. 919675732501" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-mono focus:ring-2 focus:ring-royal-600 outline-none">
+                <span class="text-[11px] text-slate-400 mt-1 block">Tip: You can also permanently change <code class="bg-slate-100 px-1 rounded">OWNER_WHATSAPP_NUMBER</code> inside the script tag.</span>
+            </div>
+
+            <div id="config-saved-toast" class="hidden p-2.5 rounded-lg bg-emerald-50 text-emerald-800 text-xs font-semibold text-center">
+                ✓ Contact number updated! Test any WhatsApp button now.
+            </div>
+
+            <div class="flex justify-end gap-2 pt-2">
+                <button onclick="closeConfigModal()" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-100">Close</button>
+                <button onclick="saveOwnerConfig()" class="px-5 py-2 rounded-xl text-xs font-bold bg-royal-800 hover:bg-royal-900 text-white shadow">Save Number</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // ============================================================================
+        // OWNER CONFIGURATION: Set your default 10-digit mobile number after '91' here
+        // ============================================================================
+        let OWNER_WHATSAPP_NUMBER = localStorage.getItem('elite_owner_phone') || '919675732501';
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+
+        // Filter Programs Tabs
+        function filterPrograms(category) {
+            const cards = document.querySelectorAll('.program-card');
+            const tabs = document.querySelectorAll('.prog-tab');
+
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-royal-800', 'text-white');
+                tab.classList.add('text-slate-700');
+            });
+
+            const activeTab = document.getElementById('tab-' + category);
+            if (activeTab) {
+                activeTab.classList.add('bg-royal-800', 'text-white');
+                activeTab.classList.remove('text-slate-700');
+            }
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Select Program and Smooth Scroll to Main Form
+        function selectProgramAndScroll(programName) {
+            const selectEl = document.getElementById('form-class');
+            for (let i = 0; i < selectEl.options.length; i++) {
+                if (selectEl.options[i].value.includes(programName.split(' ')[0])) {
+                    selectEl.selectedIndex = i;
+                    break;
+                }
+            }
+            document.getElementById('book-demo').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('form-name').focus();
+        }
+
+        // Interactive Sample Report / Test Paper Switcher
+        function switchMockup(type) {
+            const reportView = document.getElementById('view-report');
+            const testView = document.getElementById('view-test');
+            const btnReport = document.getElementById('btn-mockup-report');
+            const btnTest = document.getElementById('btn-mockup-test');
+            const filename = document.getElementById('mockup-filename');
+
+            if (type === 'report') {
+                reportView.classList.remove('hidden');
+                testView.classList.add('hidden');
+                filename.textContent = 'ELITE_Monthly_Progress_Report_Sample.pdf';
+
+                btnReport.className = 'w-full text-left p-4 rounded-xl border-2 border-royal-700 bg-royal-50/70 transition flex items-center justify-between';
+                btnTest.className = 'w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-royal-300 bg-white transition flex items-center justify-between';
+            } else {
+                reportView.classList.add('hidden');
+                testView.classList.remove('hidden');
+                filename.textContent = 'ELITE_Bilingual_Mock_Test_&_Planner.pdf';
+
+                btnTest.className = 'w-full text-left p-4 rounded-xl border-2 border-royal-700 bg-royal-50/70 transition flex items-center justify-between';
+                btnReport.className = 'w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-royal-300 bg-white transition flex items-center justify-between';
+            }
+        }
+
+        // Sector Availability Checker
+        function checkSectorAvailability() {
+            const select = document.getElementById('sector-checker-select');
+            const resultBox = document.getElementById('sector-result-box');
+            const resultText = document.getElementById('sector-result-text');
+
+            if (select.value) {
+                resultText.innerHTML = `<strong>1-on-1 Home Tutor Available</strong> in <span class="underline">${select.value}</span>! Next free demo slot open for tomorrow.`;
+                resultBox.classList.remove('hidden');
+                document.getElementById('form-sector').value = select.value;
+            } else {
+                resultBox.classList.add('hidden');
+            }
+        }
+
+        function bookFromSectorChecker() {
+            const select = document.getElementById('sector-checker-select');
+            if (select.value) {
+                document.getElementById('form-sector').value = select.value;
+            }
+            document.getElementById('book-demo').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('form-name').focus();
+        }
+
+        function quickSelectSector(sectorName) {
+            document.getElementById('form-sector').value = sectorName;
+            const resultBox = document.getElementById('sector-result-box');
+            const resultText = document.getElementById('sector-result-text');
+            resultText.innerHTML = `<strong>Selected Location:</strong> ${sectorName} — Verified Home Tutor available!`;
+            resultBox.classList.remove('hidden');
+            document.getElementById('book-demo').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Hero Mini Form Handler
+        function handleHeroQuickForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('hero-name').value.trim();
+            const studentClass = document.getElementById('hero-class').value;
+            const sector = document.getElementById('hero-sector').value.trim();
+            const phone = document.getElementById('hero-phone').value.trim();
+
+            // Populate main form and trigger submission
+            document.getElementById('form-name').value = name;
+            document.getElementById('form-phone').value = phone;
+            document.getElementById('form-sector').value = sector;
+            
+            sendFormattedWhatsAppLead(name, phone, studentClass, '1-on-1 Home Tuition', sector, 'Submitted via Hero Quick Form');
+        }
+
+        // Main Lead Form Handler
+        function handleMainFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            const studentClass = document.getElementById('form-class').value;
+            const mode = document.getElementById('form-mode').value;
+            const sector = document.getElementById('form-sector').value.trim();
+            const notes = document.getElementById('form-notes').value.trim();
+
+            sendFormattedWhatsAppLead(name, phone, studentClass, mode, sector, notes);
+        }
+
+        // Core Function to Format Lead & Open WhatsApp + Show Confirmation UI
+        function sendFormattedWhatsAppLead(name, phone, studentClass, mode, sector, notes) {
+            const messageLines = [
+                `*NEW DEMO ENQUIRY — ELITE CLASSES NOIDA*`,
+                `----------------------------------`,
+                `👤 *Parent/Student:* ${name}`,
+                `📞 *Mobile No:* ${phone}`,
+                `🎓 *Class / Target:* ${studentClass}`,
+                `🏠 *Preferred Mode:* ${mode}`,
+                `📍 *Noida Sector/Society:* ${sector}`,
+                notes ? `📝 *Note:* ${notes}` : ``,
+                `----------------------------------`,
+                `Please schedule our Free Assessment & Demo Class.`
+            ].filter(Boolean).join('\n');
+
+            const encodedMsg = encodeURIComponent(messageLines);
+            const waUrl = `https://wa.me/${OWNER_WHATSAPP_NUMBER}?text=${encodedMsg}`;
+
+            // Update confirmation UI
+            document.getElementById('confirm-user-name').textContent = name;
+            document.getElementById('confirm-user-class').textContent = studentClass;
+            document.getElementById('confirm-user-sector').textContent = sector;
+            document.getElementById('confirm-message-preview').textContent = messageLines;
+            document.getElementById('confirm-wa-link').href = waUrl;
+
+            document.getElementById('main-enquiry-form').classList.add('hidden');
+            document.getElementById('form-confirmation').classList.remove('hidden');
+            document.getElementById('book-demo').scrollIntoView({ behavior: 'smooth' });
+
+            // Open WhatsApp in new tab
+            window.open(waUrl, '_blank');
+        }
+
+        function resetMainForm() {
+            document.getElementById('main-enquiry-form').reset();
+            document.getElementById('form-confirmation').classList.add('hidden');
+            document.getElementById('main-enquiry-form').classList.remove('hidden');
+        }
+
+        // Direct WhatsApp Button Trigger
+        function triggerDirectWhatsApp(customMessage) {
+            const text = encodeURIComponent(`*ELITE CLASSES NOIDA ENQUIRY*\n\n${customMessage}`);
+            window.open(`https://wa.me/${OWNER_WHATSAPP_NUMBER}?text=${text}`, '_blank');
+        }
+
+        // Quick Call Trigger
+        function triggerQuickCall() {
+            const cleanNumber = OWNER_WHATSAPP_NUMBER.replace(/^91/, '+91');
+            window.location.href = `tel:${cleanNumber}`;
+        }
+
+        // Owner Contact Setup Modal Functions
+        function openConfigModal() {
+            document.getElementById('owner-phone-input').value = OWNER_WHATSAPP_NUMBER;
+            document.getElementById('config-saved-toast').classList.add('hidden');
+            document.getElementById('config-modal').classList.remove('hidden');
+        }
+
+        function closeConfigModal() {
+            document.getElementById('config-modal').classList.add('hidden');
+        }
+
+        function saveOwnerConfig() {
+            const raw = document.getElementById('owner-phone-input').value.replace(/\D/g, '');
+            if (raw.length >= 10) {
+                OWNER_WHATSAPP_NUMBER = raw.length === 10 ? '91' + raw : raw;
+                localStorage.setItem('elite_owner_phone', OWNER_WHATSAPP_NUMBER);
+                document.getElementById('owner-phone-input').value = OWNER_WHATSAPP_NUMBER;
+                document.getElementById('config-saved-toast').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
+```
